@@ -1,0 +1,9 @@
+<div class="add-item-container">
+    <div class="add-section">
+        <input type="text" placeholder="Add Items" class="add-item" [(ngModel)]="item">
+        <input type="number" placeholder="Quantity" class="item-quantity" [(ngModel)]="quantity">
+    </div>
+    <div class="button-section" (click)="addItem()">
+        <span class="add-button">Add</span>
+    </div>
+</div>

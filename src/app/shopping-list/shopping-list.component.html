@@ -1,0 +1,29 @@
+<div class="shopping-list-container">
+    <div class="section-header">
+        <h3 class="section-title">Shopping List</h3>
+        <div class="button-section" (click)="clearItemsWhichAreInBucket()">
+            <span class="clear-button">Clear shopping list (In Bucket items)</span>
+        </div>
+    </div>
+    <div class="section-separator"></div>
+    <div class="no-list" *ngIf="itemsService.itemList.length == 0">
+        <h3>List is empty</h3>
+    </div>
+    <div class="shopping-list" *ngIf="itemsService.itemList.length > 0">
+        <div class="shopping-item" *ngFor="let item of itemsService.itemList">
+            <div class="item-img">
+                <h1>{{item.itemName.split('')[0].toUpperCase()}}</h1>
+            </div>
+            <div class="item-name">
+                <h1>{{item.itemName}}</h1>
+            </div>
+            <div class="item-quantity">
+                <h1><span class="quantity-tag">Quantity - </span>{{item.itemQuantity}}</h1>
+            </div>
+            <div class="item-status">
+                <input type="checkbox" [(ngModel)]="item.inBucket" id="inBucket" (change)="addRemoveToBucket($event, item)">
+                <label for="inBucket">In the bucket</label>
+            </div>
+        </div>
+    </div>
+</div>

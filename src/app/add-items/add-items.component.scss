@@ -1,0 +1,52 @@
+.add-item-container {
+  position: relative;
+  width: 100%;
+  background: #f5f6fa;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  height: 16vh;
+  margin: 5% 0;
+  .add-section {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    input {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      border: none;
+      padding: 10px 13px;
+      font-size: 15px;
+    }:focus {
+      outline: none;
+    }
+    .add-item {
+      width: 40%;
+      height: 5vh;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .item-quantity {
+      width: 25%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0px 10px;
+    }
+  }
+  .button-section {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    background: #3498db;
+    padding: 15px 35px 15px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    .add-button {
+      color: #f5f6fa;
+    }
+  }
+}

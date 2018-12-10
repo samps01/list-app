@@ -1,0 +1,43 @@
+.header {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: fixed;
+  height:11%;
+  background:#3498db;
+  width:100%;
+  top:0;
+  left: 0;
+  color: #f5f6fa;
+  .container {
+    padding: 1px 7px 1px 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .app-name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 20%;
+  }
+  .header-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex: 2 80%;
+    .custom-header-button {
+      cursor: pointer;
+      margin: auto 15px;
+      padding: 5px 10px 5px 10px;
+    }
+    :hover {
+      background: #2980b9;
+      border-radius: 5px;
+    }
+    .separator {
+      margin: auto 0px;
+      border: 1px solid #f5f6fa;
+      height: 50%;
+    }
+  }
+}
